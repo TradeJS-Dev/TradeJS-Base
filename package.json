@@ -1,0 +1,87 @@
+{
+  "name": "@tradejs/base",
+  "version": "3.1.0",
+  "description": "Default TradeJS preset wiring the public strategy, indicator, connector, and runtime packages.",
+  "type": "module",
+  "packageManager": "yarn@4.13.0",
+  "engines": {
+    "node": "24.x"
+  },
+  "keywords": [
+    "tradejs",
+    "trading",
+    "backtesting",
+    "preset",
+    "starter",
+    "plugins"
+  ],
+  "homepage": "https://tradejs.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TradeJS-Dev/TradeJS-Base"
+  },
+  "bugs": {
+    "url": "https://github.com/TradeJS-Dev/TradeJS-Base/issues"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@tradejs/connectors": "^3.0.1",
+    "@tradejs/core": "^3.0.1",
+    "@tradejs/indicators": "^3.0.1",
+    "@tradejs/node": "^3.0.1",
+    "@tradejs/strategy-adaptive-momentum-ribbon": "^3.0.0",
+    "@tradejs/strategy-adaptive-trend-channel": "^3.0.0",
+    "@tradejs/strategy-breakout": "^3.0.0",
+    "@tradejs/strategy-cup-and-handle": "^3.0.0",
+    "@tradejs/strategy-double-tap": "^3.0.0",
+    "@tradejs/strategy-grid": "^3.0.0",
+    "@tradejs/strategy-grid-classic": "^3.0.0",
+    "@tradejs/strategy-head-and-shoulders": "^3.0.0",
+    "@tradejs/strategy-hyperliquid-consensus": "^3.0.0",
+    "@tradejs/strategy-liquidity-tails": "^3.0.0",
+    "@tradejs/strategy-liquidity-zones": "^3.0.0",
+    "@tradejs/strategy-ma-strategy": "^3.0.0",
+    "@tradejs/strategy-market-flush-reversal": "^3.0.0",
+    "@tradejs/strategy-relative-rotation": "^3.0.0",
+    "@tradejs/strategy-structure-zones": "^3.0.0",
+    "@tradejs/strategy-trend-follow": "^3.0.0",
+    "@tradejs/strategy-trend-line": "^3.0.0",
+    "@tradejs/strategy-trend-shift": "^3.0.0",
+    "@tradejs/strategy-volatility-compression-breakout": "^3.0.0",
+    "@tradejs/strategy-volume-divergence": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.2.5",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "build": "tsup",
+    "format:check": "prettier --check .",
+    "test": "jest --runInBand",
+    "typecheck": "tsc -p ./tsconfig.json --noEmit",
+    "checks": "yarn format:check && yarn typecheck && yarn test && yarn build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "license": "BUSL-1.1",
+  "author": "aleksnick (https://github.com/aleksnick)"
+}

@@ -13,7 +13,10 @@
     "backtesting",
     "preset",
     "starter",
-    "plugins"
+    "plugins",
+    "ai",
+    "claude",
+    "codex"
   ],
   "homepage": "https://tradejs.dev",
   "repository": {

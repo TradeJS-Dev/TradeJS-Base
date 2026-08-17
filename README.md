@@ -52,3 +52,5 @@ If you only need the built-in catalog, `defineConfig(basePreset)` is enough.
 The source of truth for the preset is this repository. Strategy implementation
 changes belong to their individual repositories and do not require a TradeJS
 engine commit.
+
+Keywords: ai, claude, codex.

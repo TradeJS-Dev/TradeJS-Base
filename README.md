@@ -53,4 +53,9 @@ The source of truth for the preset is this repository. Strategy implementation
 changes belong to their individual repositories and do not require a TradeJS
 engine commit.
 
+Package publishing is beta-first. Relevant pushes publish a unique prerelease
+and validate it in the production-like Project image. Weekly automation alone
+promotes the current verified beta to stable `latest`; the Project batches all
+new stable TradeJS packages into one production image later that morning.
+
 Keywords: ai, claude, codex.

@@ -9,6 +9,15 @@ These rules apply to the complete `TradeJS-Base` repository.
 `@tradejs/base` is the non-empty default preset for new TradeJS projects. It
 owns package composition, not engine or strategy behavior.
 
+## Workspace Routing
+
+- Start from `~/dev/tradejs/AGENTS.md`; do not scan sibling repositories.
+- Change only default package composition here. Strategy behavior belongs in
+  its standalone `tradejs-strategy-*` repository; shared helpers belong in
+  `tradejs-strategy-kit`; runtime/framework behavior belongs in `investing`.
+- Run operational validation of the composed project from `tradejs-project`.
+  Do not create research artifacts or runtime config in this repository.
+
 ## Boundaries
 
 - Keep every public base strategy package in `basePreset.strategies` and in

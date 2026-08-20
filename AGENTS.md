@@ -33,3 +33,9 @@ owns package composition, not engine or strategy behavior.
 
 Run `yarn checks` before every commit. Reusable CI and publishing are owned by
 `TradeJS-Workflows`; keep local workflow files as thin callers.
+
+## Runtime Dependency Contract
+
+- Keep every `@tradejs/*` runtime package in both `peerDependencies` and `devDependencies`, never in `dependencies`.
+- The consuming TradeJS Project must own the exact runtime composition; nested TradeJS package copies are forbidden.
+- Keep the package-contract test in `yarn checks` whenever dependency metadata changes.

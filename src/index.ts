@@ -10,6 +10,7 @@ export const basePreset: TradejsConfig = {
     "@tradejs/strategy-relative-rotation",
     "@tradejs/strategy-trend-shift",
     "@tradejs/strategy-double-tap",
+    "@tradejs/strategy-dragon",
     "@tradejs/strategy-head-and-shoulders",
     "@tradejs/strategy-cup-and-handle",
     "@tradejs/strategy-grid",

@@ -32,8 +32,9 @@ describe("basePreset", () => {
       expect(isEnabled({ CLOSE_OPPOSITE_POSITIONS: false })).toBe(false);
       expect(isEnabled({ CLOSE_OPPOSITE_POSITIONS: true })).toBe(true);
 
-      expect(basePreset.strategies).toHaveLength(20);
-      expect(new Set(basePreset.strategies).size).toBe(20);
+      expect(basePreset.strategies).toHaveLength(21);
+      expect(new Set(basePreset.strategies).size).toBe(21);
+      expect(basePreset.strategies).toContain("@tradejs/strategy-dragon");
       expect(basePreset.strategies).toContain("@tradejs/strategy-trend-line");
       expect(basePreset.strategies).not.toContain("@tradejs/strategies");
     });

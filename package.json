@@ -1,6 +1,6 @@
 {
   "name": "@tradejs/base",
-  "version": "3.1.3",
+  "version": "3.1.4",
   "description": "Default TradeJS preset wiring the public strategy, indicator, connector, and runtime packages.",
   "type": "module",
   "packageManager": "yarn@4.13.0",

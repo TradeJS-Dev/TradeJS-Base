@@ -18,7 +18,7 @@ Earlier releases remain MIT-licensed. See the
 
 `basePreset` installs and wires the public TradeJS packages:
 
-- all 20 public strategy packages
+- all 21 public strategy packages
 - `@tradejs/indicators`
 - `@tradejs/connectors`
 

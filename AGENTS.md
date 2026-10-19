@@ -20,8 +20,9 @@ owns package composition, not engine or strategy behavior.
 
 ## Boundaries
 
-- Keep every public base strategy package in `basePreset.strategies` and in
-  `dependencies` so a consumer receives a runnable preset.
+- Keep every default strategy package in `basePreset.strategies` and in both
+  `peerDependencies` and matching `devDependencies`. The consuming Project
+  installs the exact runtime composition; do not add runtime `dependencies`.
 - Keep TrendLine and ReverseTrendLine represented by the single
   `@tradejs/strategy-trend-line` package.
 - Do not implement strategy, indicator, connector, or runtime behavior here.

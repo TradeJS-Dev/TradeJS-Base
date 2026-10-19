@@ -18,7 +18,7 @@ Earlier releases remain MIT-licensed. See the
 
 `basePreset` installs and wires the public TradeJS packages:
 
-- all 23 public strategy packages
+- the 23 strategy packages selected for the default preset
 - `@tradejs/indicators`
 - `@tradejs/connectors`
 
@@ -54,7 +54,7 @@ changes belong to their individual repositories and do not require a TradeJS
 engine commit.
 
 Package publishing is beta-first. Relevant pushes publish a unique prerelease
-and validate it in the production-like Project image. Weekly automation alone
+and validate its published tarball in a clean npm consumer. Weekly automation alone
 promotes the current verified beta to stable `latest`; the Project batches all
 new stable TradeJS packages into one production image later that morning.
 
